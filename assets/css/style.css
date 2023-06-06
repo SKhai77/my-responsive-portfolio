@@ -1,0 +1,44 @@
+h1 {
+    font-size: 200%;
+  }
+  
+  h2 {
+    margin: 2% 0;
+    font-size: 250%;
+  }
+  
+  section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      margin-left: 1em;
+      margin-right: 1em;
+  }
+  
+  /* mobile device */
+  article {
+      flex: 1 0 97%;
+      padding: 1em;
+      border: 1px solid fuchsia;
+  }
+  
+  footer, header {
+      text-align:center;
+      padding: 1em;
+  }
+  
+  /* tables/small laptops */
+  @media screen and (min-width: 768px) {
+      article {
+          flex: 1 0 45%;
+          max-width: 45%;
+      }
+  }
+  
+  /* laptops/desktop */
+  @media screen and (min-width: 992px) {
+      article {
+          flex: 1 0 29%;
+          max-width: 29%;
+      }
+  }

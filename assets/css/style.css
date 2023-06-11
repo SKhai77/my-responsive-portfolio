@@ -1,6 +1,6 @@
 :root {
 /* declare a variable with `--` syntax */
---dark: #111a22;
+--dark: #112122;
 --skyblue: #a4cfc7;
 --white: #ffff;
 
@@ -10,6 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
   
 header {
@@ -23,13 +24,15 @@ header {
 }
   
 header h1 {
-    font-size: 150%;
+    font-family: 'Lucida Sans' serif;
+    font-size: 175%;
     background-color: var(--skyblue);
-    padding: 1% 1% 1% 5%;
+    padding: 0 0.3em 0 2.4em;
     margin: 0;
 }
 
-h2 {
+h2 { 
+    font-family: inherit; /* May be able to remove, check it out*/
     margin: 2% 0;
     
 }
@@ -37,7 +40,7 @@ h2 {
 nav ul {
     display: flex;    
     justify-content: space-between;
-    min-width: 410px;
+    min-width: 410px; /* 300px try this if it work */
     padding: 0 15% 0 0;
 }
   
@@ -62,11 +65,15 @@ nav a:hover {
     flex-direction: row;
     justify-content: center;
     text-align: left;
-    padding: 20px;    
-    background: repeating-linear-gradient(135deg, #56556a 0, #56556a 10%, transparent 0, transparent 50%);
-        background-size: 6em 6em;
+    padding: 20px;
+/* 
+    background-image: repeating-linear-gradient(-45deg, #d1d0d8, #d1d0d8 6em, #4f4e72 6em, #4f4e72 50%);
+    background-size: 16em 16em; */
+
+    background: repeating-linear-gradient(135deg, #56556a 0, #56556a 6em, transparent 6em, transparent 50%);
+        background-size: 14em 14em;
         background-color: #c8dde6;
-        opacity: 0.75
+        opacity: 0.75;
 }
 
 #banner h2 {
@@ -74,8 +81,15 @@ nav a:hover {
     padding: 10px;
 }
 
+/* main {
+  display: flex;
+  flex: 1 1 0;
+  max-width: 1200px;
+  margin: 2% auto;
+} */
+
 .content {    
-    display: flex; 
+    display: flex;
 }
 
 .content h2 {
@@ -84,21 +98,31 @@ nav a:hover {
       flex-wrap: wrap;
       flex-direction: row;        
       margin-left: 1em;
-      margin-right: 1em;
+      margin-right: 0.5em;
       font-size: 200%;
       padding: 1%;
-      border-right: 3px solid #b9c6ae;
-      min-width: 200px;
+      border-right: 3px solid var(--dark);
+      min-width:200px;
       text-align: right;
 }
   
+/* 
+section {
+  flex: 1 1 0;
+  padding-right: 5%;
+} */
 
 /* mobile device */
 article {
       flex: 1 0 77%;
-      padding: 1em;
-      /* border: 3px solid fuchsia; */
+      /* padding: 1em; */
+      /* border: 3px solid var(--skyblue); */
       margin: 1%;
+}
+
+img {
+    width: 100%;
+    border: 3px solid var(--skyblue);
 }
 
 /* contact coentent */

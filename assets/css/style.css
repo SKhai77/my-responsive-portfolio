@@ -6,9 +6,7 @@
 
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+body {   
     line-height: 1.3;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -36,7 +34,12 @@ h2 {
     margin: 2% 0;
     
 }
-   
+
+h3 {
+    background-color: var(--skyblue);
+    padding: 10px;
+}
+
 nav ul {
     display: flex;    
     justify-content: space-between;
@@ -76,10 +79,10 @@ nav a:hover {
     opacity: 0.75;
 }
 
-#banner h3 {
-    background-color: var(--skyblue);
-    padding: 10px;
+.mypic {
+    width: fit-content;   
 }
+
 
 /* main {
   display: flex;
@@ -114,7 +117,7 @@ section {
 
 /* mobile device */
 article {
-    flex: 1 0 77%;
+    flex: 1;
       /* padding: 1em; */
       /* border: 3px solid var(--skyblue); */
     margin: 1%;

@@ -74,7 +74,7 @@ nav a:active {
 
 .subtitle h2 {
     display: block;
-    background-color: var(--white);
+    background-color: var(--skyblue);
     padding: 10px;
 
 }
@@ -89,7 +89,7 @@ nav a:active {
     width: fit-content;   
 }
 
-h2 {
+h3 {
     justify-content:right;             
     margin-left: 1em;
     margin-right: 0.5em;
@@ -100,17 +100,9 @@ h2 {
     text-align: right;
 }
   
-/* 
-section {
-  flex: 1 1 0;
-  padding-right: 5%;
-} */
 
-/* mobile device */
 article {
     flex: 1;
-      /* padding: 1em; */
-      /* border: 3px solid var(--skyblue); */
     margin: 1%;
 }
 

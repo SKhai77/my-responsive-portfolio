@@ -1,4 +1,4 @@
-# The Optimum Showcase of My Full Stack Web Development Coding Journey.
+# Sian Khai | Portfolio Responsive Design
 
 
 ## Table of Contents
@@ -12,18 +12,23 @@
 
 ## Description
 
-
+This project is to create a responsive portfolio myself that include about me, the showcase of my full stack web development projects and my contact information.
+I have added a few projects and will add more accodingly as the classes going on.
 
 
 ## Projects
 
-
-
+- Prework Study Guide | [Click here to visit!](https://skhai77.github.io/prework-study-guide/)
+- First Mini Project  | [Click here to visit!](https://skhai77.github.io/stu-mini-project/)
+- Horiseon Page's codes Refactored  | [Click here to visit!](https://skhai77.github.io/horiseon-code-refact/)
+- CSS Snippet Cheat Sheet (Coming soon!)
+- JavaScript (Coming soon!)
 
 ## Code Languages
 
 - HTML
 - CSS
+- JavaScript
 
 
 ## Installation
@@ -36,8 +41,8 @@
 
 - It is a normal webpage and no particular instruction is needed.
 - Preview the homepage or visit the live website by
- [clicking here, Sian Khai's Portfolio](https://skhai77.github.io/siankhai-portfolio/index.html).
+ [clicking here, Sian Khai's Portfolio](https://skhai77.github.io/siankhai-portfolio-responsive/).
 
-![Portfolio Screenshot](assets/screenshots/siankhai-homepage.png)
+![Portfolio Screenshot](assets/screenshots/siankhai-portfolio.png)
 
 

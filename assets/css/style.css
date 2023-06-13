@@ -21,24 +21,18 @@ header {
     background-color: var(--dark);
     color: var(--dark);    
 }
-  
+
+.logo {
+    text-decoration: none;
+    color: inherit;
+}
+
 header h1 {
     font-family: 'Lucida Sans' serif;
     font-size: 175%;
     background-color: var(--skyblue);
     padding: 0 0.3em 0 2.4em;
     margin: 0;
-}
-
-h2 { 
-    font-family: inherit; /* May be able to remove, check it out*/
-    margin: 2% 0;
-    
-}
-
-h3 {
-    background-color: var(--skyblue);
-    padding: 10px;
 }
 
 nav ul {
@@ -58,45 +52,41 @@ nav a {
 }
   
 nav a:hover {
-    color: var(--dark);
+    border-bottom: 3px solid;
+    color: var(--white);
+}
+/* Not working so far */
+nav a:active {
     border-bottom: 3px solid;
     color: var(--white);
 }
 
-#banner {
+.banner { 
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    text-align: left;
-    padding: 20px;
-/* 
-    background-image: repeating-linear-gradient(-45deg, #d1d0d8, #d1d0d8 6em, #4f4e72 6em, #4f4e72 50%);
-    background-size: 16em 16em; */
-
+    padding: 50px 4%;
     background: repeating-linear-gradient(135deg, #56556a 0, #56556a 6em, transparent 6em, transparent 50%);
     background-size: 14em 14em;
     background-color: #c8dde6;
     opacity: 0.75;
+    justify-content: flex-end;
 }
 
-.mypic {
-    width: fit-content;   
+.subtitle h2 {
+    display: block;
+    background-color: var(--white);
+    padding: 10px;
+
 }
-
-
-/* main {
-  display: flex;
-  flex: 1 1 0;
-  max-width: 1200px;
-  margin: 2% auto;
-} */
-
 
 
 .content {    
     display: flex;
     flex-wrap: wrap;
+}
+
+.mypic {
+    width: fit-content;   
 }
 
 h2 {

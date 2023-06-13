@@ -131,7 +131,6 @@ img:hover {
     transition: 0.50s;
 }
 
-
 .project-column-images { 
     display: flex;
     flex-wrap: wrap;
@@ -144,11 +143,6 @@ img:hover {
     flex-wrap: wrap;
 }
 
-/* contact */
-/* .contact-info {
-    flex: 1;
-    margin: 1%;
-} */
 .contact-info ul {
     display: flex;
     flex-wrap: wrap;    
@@ -187,13 +181,14 @@ footer {
 /* Large smartphones - navbar changes color */
 @media screen and (max-width: 768px) {
 nav {
-background-color: #bb8588;
+background-color: #1eb132;
     }
 }
 
 /* Small smartphones - image placeholders change color */
 @media screen and (max-width: 576px) {
-.sample-img {
-background-color: #8ac4ff;
-    }
+nav {
+background-color: #1333ee;
+     }
 }
+        

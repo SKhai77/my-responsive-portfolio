@@ -12,8 +12,8 @@
 
 ## Description
 
-This project is to create a responsive portfolio myself that include about me, the showcase of my full stack web development projects and my contact information.
-I have added a few projects and will add more accodingly as the classes going on.
+This project is to create a responsive portfolio for myself that includes information about me, a showcase of my full-stack web development projects, and my contact information.
+I have added a few projects and will add more as the classes go on.
 
 
 ## Projects
@@ -43,6 +43,6 @@ I have added a few projects and will add more accodingly as the classes going on
 - Preview the homepage or visit the live website by
  [clicking here, Sian Khai's Portfolio](https://skhai77.github.io/siankhai-portfolio-responsive/).
 
-![Portfolio Screenshot](assets/screenshots/siankhai-portfolio.png)
+![Portfolio Screenshot](./assets/screenshot/portfolio-screenshot.png)
 
 

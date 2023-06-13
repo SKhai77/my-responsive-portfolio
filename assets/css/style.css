@@ -6,18 +6,19 @@
 
 }
 
+/* the whole body */
 body {
     flex-wrap: wrap;
     line-height: 1.3;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-  
+
+/* header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding: 1% 1% 1% 0%;
-    /* use CSS var() function to reference a variable created above */
     background-color: var(--dark);
     color: var(--dark);    
 }
@@ -35,16 +36,16 @@ header h1 {
     margin: 0;
 }
 
+/* navlink */
 nav ul {
     display: flex;    
     justify-content: space-between;
-    min-width: 410px; /* 300px try this if it work */
+    min-width: 410px;
     padding: 0 15% 0 0;
 }
   
 nav a {
     border-bottom: 3px solid;
-    /* border-color: var(--skyblue); */
     padding: 5px 8px;
     color: var(--skyblue);
     font-weight: bold;
@@ -55,12 +56,12 @@ nav a:hover {
     border-bottom: 3px solid;
     color: var(--white);
 }
-/* Not working so far */
-nav a:active {
+
+nav a:visited {
     border-bottom: 3px solid;
-    color: var(--white);
 }
 
+/* banner */
 .banner { 
     display: flex;
     flex-wrap: wrap;
@@ -76,10 +77,9 @@ nav a:active {
     display: block;
     background-color: var(--skyblue);
     padding: 10px;
-
 }
 
-
+/* contents */
 .content {    
     display: flex;
     flex-wrap: wrap;
@@ -98,10 +98,12 @@ h3 {
     border-right: 3px solid var(--dark);
     min-width:200px;
     text-align: right;
+    margin: 2%;
 }
   
-
 article {
+    display: flex;
+    flex-wrap: wrap;
     flex: 1;
     margin: 1%;
 }
@@ -114,18 +116,28 @@ article {
 }
 
 img {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
     border: 3px solid var(--skyblue);
+    opacity: 80%;
+    transition: 0.45s;
 }
 
-/* .project-row-image {
-    flex-direction: column; 
-} */
+img:hover {
+    display: flex;
+    flex-wrap: wrap;
+  
+    border: 3px solid var(--dark);
+    opacity: 100%;
+    transition: 0.50s;
+}
+
+
 .project-column-images { 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* width: 50%; */
 }
 
 .work-row-image {
@@ -134,12 +146,15 @@ img {
     flex-wrap: wrap;
 }
 
-/* contact coentent */
+/* contact */
+.contact-info {
+    flex: 1;
+    margin: 1%;
+}
 .contact-info ul {
     display: flex;
     flex-wrap: wrap;    
     justify-content: space-evenly;
-    /* min-width: 410px; */
     padding-top: 30px;   
 }
 
@@ -152,11 +167,10 @@ img {
 }
   
 .contact-info a:hover {
-    /* color: var(--skyblue); */
     border-bottom: 3px solid var(--skyblue);
 }
 
-/* footer content */
+/* footer */
 footer {
     text-align:center;
     padding: 1em;
@@ -164,21 +178,24 @@ footer {
     color: var(--skyblue);
 }
 
+/* Not done yet */
 /* Tablets - header changes color */
 @media screen and (max-width: 992px) {
     header {
     background: #772014;
     }
+}
+
+/* Large smartphones - navbar changes color */
+@media screen and (max-width: 768px) {
+nav {
+background-color: #bb8588;
     }
-    /* Large smartphones - navbar changes color */
-    @media screen and (max-width: 768px) {
-    nav {
-    background-color: #bb8588;
+}
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
+.sample-img {
+background-color: #8ac4ff;
     }
-    }
-    /* Small smartphones - image placeholders change color */
-    @media screen and (max-width: 576px) {
-    .sample-img {
-    background-color: #8ac4ff;
-    }
-    }
+}

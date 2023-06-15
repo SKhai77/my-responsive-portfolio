@@ -99,7 +99,7 @@ h3 {
     border-right: 3px solid var(--dark);
     min-width:200px;
     text-align: right;
-    margin: 2%;
+    margin: 1%;
 }
   
 article {
@@ -124,8 +124,7 @@ img {
 
 img:hover {
     display: flex;
-    flex-wrap: wrap;
-  
+    flex-wrap: wrap;  
     border: 3px solid var(--dark);
     opacity: 100%;
     transition: 0.50s;
